@@ -4,7 +4,7 @@ Introduction to building a C++ library with [Boost Python][] and using it from P
 
 * [Boost Python][]
 
-#### Installing dependencies
+### Installing dependencies
 
 * Install the development header files for python and boost python: 
 
@@ -16,7 +16,33 @@ Introduction to building a C++ library with [Boost Python][] and using it from P
 
 ## Building
 
-#### Eclipse CDT
+### Distutils
+
+[Distutils][] is part of the Python standard library so no installation is required.
+
+Build the module by using:
+
+    python setup.py build
+
+Navigate to the build output folder (build/lib.linux...).
+
+### CMake
+
+Install [CMake][] with:
+
+    sudo apt-get install cmake 
+
+Create a [CMake][] output directory and navigate to it:
+
+    mkdir cmake_build
+    cd cmake_build
+
+Build from the output directory (intro.so will be placed in the cmake_build directory):
+
+    cmake ../src
+    make
+
+###Eclipse CDT
 
 Install [Eclipse CDT][]:
 
@@ -36,32 +62,6 @@ When using boost python the .so file must have the same name as
 the boost python module. To make sure no prefix is added to the output name set the Output prefix in Build Artifact tab to an empty string.
 
 Build the project in Eclipse, start a console window navigate to the build output folder (Debug by default).
-
-#### Distutils
-
-[Distutils][] is part of the Python standard library so no installation is required.
-
-Build the module by using:
-
-    python setup.py build
-
-Navigate to the build output folder (build/lib.linux...).
-
-#### CMake
-
-Install [CMake][] with:
-
-    sudo apt-get install cmake 
-
-Create a [CMake][] output directory and navigate to it:
-
-    mkdir cmake_build
-    cd cmake_build
-
-Build from the output directory (intro.so will be placed in the cmake_build directory):
-
-    cmake ../src
-    make
 
 ## Using
 
