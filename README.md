@@ -14,9 +14,6 @@ Introduction to building a C++ library with [Boost Python][] and using it from P
 
         sudo apt-get install g++
 
-
-
-
 ## Building
 
 ###Eclipse CDT
@@ -50,7 +47,6 @@ Build the module by using:
 
 Navigate to the build output folder (build/lib.linux...).
 
-
 ## Using
 
 Start an interactive python console from one of the build output folders above: 
@@ -61,7 +57,6 @@ Import the intro module and call the module function:
 
     >>> import intro
     >>> intro.type_info("test")
-
 
 [Boost Python]: http://www.boost.org/
 [Distutils]: https://docs.python.org/2/library/distutils.html
