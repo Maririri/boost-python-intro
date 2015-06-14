@@ -47,6 +47,22 @@ Build the module by using:
 
 Navigate to the build output folder (build/lib.linux...).
 
+### CMake
+
+Install [CMake][] with:
+
+    sudo apt-get install cmake 
+
+Create a [CMake][] output directory and navigate to it:
+
+    mkdir cmake_build
+    cd cmake_build
+
+Build from the output directory (intro.so will be placed in the cmake_build directory):
+
+    cmake ../src
+    make
+
 ## Using
 
 Start an interactive python console from one of the build output folders above: 
@@ -61,3 +77,4 @@ Import the intro module and call the module function:
 [Boost Python]: http://www.boost.org/
 [Distutils]: https://docs.python.org/2/library/distutils.html
 [Eclipse CDT]: https://eclipse.org/cdt/
+[CMake]: http://www.cmake.org/
