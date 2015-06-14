@@ -4,7 +4,7 @@ Introduction to building a C++ library with [Boost Python][] and using it from P
 
 * [Boost Python][]
 
-### Installing dependencies
+#### Installing dependencies
 
 * Install the development header files for python and boost python: 
 
@@ -16,7 +16,7 @@ Introduction to building a C++ library with [Boost Python][] and using it from P
 
 ## Building
 
-###Eclipse CDT
+#### Eclipse CDT
 
 Install [Eclipse CDT][]:
 
@@ -37,7 +37,7 @@ the boost python module. To make sure no prefix is added to the output name set 
 
 Build the project in Eclipse, start a console window navigate to the build output folder (Debug by default).
 
-### Distutils
+#### Distutils
 
 [Distutils][] is part of the Python standard library so no installation is required.
 
@@ -47,7 +47,7 @@ Build the module by using:
 
 Navigate to the build output folder (build/lib.linux...).
 
-### CMake
+#### CMake
 
 Install [CMake][] with:
 
