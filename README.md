@@ -1,3 +1,5 @@
+Introduction to building a C++ library with [Boost Python][] and using it from Python.
+
 ## Dependencies
 
 * [Boost Python][]
