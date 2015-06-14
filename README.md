@@ -15,11 +15,13 @@ Introduction to building a C++ library with [Boost Python][] and using it from P
         sudo apt-get install g++
 
 
+
+
 ## Building
 
 ###Eclipse CDT
 
-Install Eclipse CDT:
+Install [Eclipse CDT][]:
 
     sudo apt-get install eclipse eclipse-cdt 
 
@@ -36,15 +38,31 @@ Under tab Tool Settings:
 When using boost python the .so file must have the same name as 
 the boost python module. To make sure no prefix is added to the output name set the Output prefix in Build Artifact tab to an empty string.
 
-Build the project in Eclipse, start a console window navigate to the build folder (Debug by default) and start an interactive python console: 
+Build the project in Eclipse, start a console window navigate to the build output folder (Debug by default).
 
-    $ cd Debug
+### Distutils
+
+[Distutils][] is part of the Python standard library so no installation is required.
+
+Build the module by using:
+
+    python setup.py build
+
+Navigate to the build output folder (build/lib.linux...).
+
+
+## Using
+
+Start an interactive python console from one of the build output folders above: 
+
     $ python
 
-Import the intro module and test the module function:
+Import the intro module and call the module function:
 
     >>> import intro
     >>> intro.type_info("test")
 
 
 [Boost Python]: http://www.boost.org/
+[Distutils]: https://docs.python.org/2/library/distutils.html
+[Eclipse CDT]: https://eclipse.org/cdt/
