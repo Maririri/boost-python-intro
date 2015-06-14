@@ -1,5 +1,8 @@
 *.*~
 
+# Distutils output files
+build/*
+
 # Eclipse project files
 *.cproject
 *.project
