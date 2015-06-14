@@ -6,6 +6,6 @@ setup(
     ext_modules=[
         Extension(
             "intro", 
-            ["intro.cpp", "functions.cpp"],
+            ["src/intro.cpp", "src/functions.cpp"],
             libraries = ["boost_python"])
     ])

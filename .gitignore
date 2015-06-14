@@ -1,5 +1,8 @@
 *.*~
 
+# CMake output folder
+cmake_build/*
+
 # Distutils output files
 build/*
 
