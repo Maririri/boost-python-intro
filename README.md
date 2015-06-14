@@ -6,14 +6,22 @@ Introduction to building a C++ library with [Boost Python][] and using it from P
 
 ### Installing dependencies
 
-Install the development header files for python and boost python: 
+* Install the development header files for python and boost python: 
 
-    sudo apt-get install python-dev libboost-python-dev
+        sudo apt-get install python-dev libboost-python-dev
+
+* Install the g++ compiler:
+
+        sudo apt-get install g++
 
 
 ## Building
 
 ###Eclipse CDT
+
+Install Eclipse CDT:
+
+    sudo apt-get install eclipse eclipse-cdt 
 
 Create new shared library project with the name **intro**. Include the repository header and implementation files.
 
