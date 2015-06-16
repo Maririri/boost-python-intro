@@ -77,7 +77,7 @@ Under tab Tool Settings:
 When using boost python the .so file must have the same name as 
 the boost python module. To make sure no prefix is added to the output name set the Output prefix in Build Artifact tab to an empty string.
 
-Build the project in Eclipse, start a console window navigate to the build output folder (Debug by default).
+Build the project in Eclipse, start a terminal and navigate to the build output folder (Debug by default).
 
 ## Using
 
