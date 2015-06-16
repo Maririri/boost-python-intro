@@ -30,7 +30,7 @@ Compile the source files:
 
 Link the targets (intro.so will be placed in the gpp_build directory)::
 
-    g++ -shared -o "intro.so" ./functions.o ./intro.o -lboost_python -lpython2.7
+    g++ -shared -Wl,-soname,intro.so -o "intro.so" ./functions.o ./intro.o -lboost_python -lpython2.7
 
 #### Distutils
 
