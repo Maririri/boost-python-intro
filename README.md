@@ -24,7 +24,7 @@ Compile the source files:
     g++ -I/usr/include/python2.7 -c -fPIC -o "functions.o" "../src/functions.cpp"
     g++ -I/usr/include/python2.7 -c -fPIC -o "intro.o" "../src/intro.cpp"
 
-Link the targets (intro.so will be placed in the gpp_build directory)::
+Link the targets (intro.so will be placed in the gpp_build directory):
 
     g++ -shared -Wl,-soname,intro.so -o "intro.so" ./functions.o ./intro.o -lboost_python -lpython2.7
 
