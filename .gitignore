@@ -1,5 +1,8 @@
 *.*~
 
+# g++ output folder
+gpp_build/*
+
 # CMake output folder
 cmake_build/*
 

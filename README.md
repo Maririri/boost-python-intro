@@ -4,7 +4,7 @@ Introduction to building a C++ library with [Boost Python][] and using it from P
 
 * [Boost Python][]
 
-### Installing dependencies
+#### Installing dependencies
 
 * Install the development header files for python and boost python: 
 
@@ -16,7 +16,23 @@ Introduction to building a C++ library with [Boost Python][] and using it from P
 
 ## Building
 
-### Distutils
+#### Command line
+
+Create a g++ output directory and navigate to it:
+
+    mkdir gpp_build
+    cd gpp_build
+
+Compile the source files:
+
+    g++ -I/usr/include/python2.7 -c -fPIC -o "functions.o" "../src/functions.cpp"
+    g++ -I/usr/include/python2.7 -c -fPIC -o "intro.o" "../src/intro.cpp"
+
+Link the targets (intro.so will be placed in the gpp_build directory)::
+
+    g++ -shared -o "intro.so" ./functions.o ./intro.o -lboost_python -lpython2.7
+
+#### Distutils
 
 [Distutils][] is part of the Python standard library so no installation is required.
 
@@ -26,7 +42,7 @@ Build the module by using:
 
 Navigate to the build output folder (build/lib.linux...).
 
-### CMake
+#### CMake
 
 Install [CMake][] with:
 
@@ -42,7 +58,7 @@ Build from the output directory (intro.so will be placed in the cmake_build dire
     cmake ../src
     make
 
-###Eclipse CDT
+#### Eclipse CDT
 
 Install [Eclipse CDT][]:
 
