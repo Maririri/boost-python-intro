@@ -36,7 +36,7 @@ Link the targets (intro.so will be placed in the gpp_build directory)::
 
 [Distutils][] is part of the Python standard library so no installation is required.
 
-Build the module by using:
+Build the module with:
 
     python setup.py build
 
