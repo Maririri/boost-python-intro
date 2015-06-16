@@ -2,11 +2,7 @@ Introduction to building a C++ library with [Boost Python][] and using it from P
 
 ## Dependencies
 
-* [Boost Python][]
-
-#### Installing dependencies
-
-* Install the development header files for python and boost python: 
+* Install the development header files for Python and [Boost Python][]: 
 
         sudo apt-get install python-dev libboost-python-dev
 
