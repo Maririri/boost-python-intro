@@ -10,7 +10,7 @@ Introduction to building a C++ library with [Boost Python][] and using it from P
 
         sudo apt-get install python-dev libboost-python-dev
 
-* Install the g++ compiler:
+* Install the [g++][] compiler:
 
         sudo apt-get install g++
 
@@ -91,6 +91,7 @@ Import the intro module and call the module function:
     >>> intro.type_info("test")
 
 [Boost Python]: http://www.boost.org/
+[g++]: https://gcc.gnu.org/
 [Distutils]: https://docs.python.org/2/library/distutils.html
 [Eclipse CDT]: https://eclipse.org/cdt/
 [CMake]: http://www.cmake.org/
