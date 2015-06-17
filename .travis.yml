@@ -11,3 +11,4 @@ install:
 
 script:
   - python setup.py build
+  - mkdir cmake_build && cd cmake_build && cmake ../src && make
