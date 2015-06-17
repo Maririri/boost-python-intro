@@ -1,5 +1,9 @@
 Introduction to building a C++ library with [Boost Python][] and using it from Python in Ubuntu.
 
+## Continuous integration
+
+[![Build Status](https://travis-ci.org/oscarlorentzon/boost_python_intro.svg)](https://travis-ci.org/oscarlorentzon/boost_python_intro)
+
 ## Dependencies
 
 * Install the development header files for Python and [Boost Python][]: 
